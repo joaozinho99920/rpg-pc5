@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>RPG-PC5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>❄️ RPG-PC5 ❄️</h1>
+
+  <!-- TELA INICIAL -->
+  <div id="start">
+    <button onclick="novoJogo()">Novo Jogo</button>
+    <button onclick="carregarJogo()">Carregar Jogo</button>
+  </div>
+
+  <!-- JOGO -->
+  <div id="game" style="display:none;">
+
+    <div id="status"></div>
+
+    <div id="menu">
+      <button onclick="explorar()">Explorar</button>
+      <button onclick="viajar()">Viajar</button>
+      <button onclick="ferreiro()">Ferreiro</button>
+      <button onclick="mostrarInventario()">Inventário</button>
+      <button onclick="mostrarStatus()">Status</button>
+      <button onclick="equiparItem()">Equipar</button>
+      <button onclick="usarCodigo()">Códigos</button>
+      <button onclick="salvar()">Salvar</button>
+      <button onclick="sair()">Sair</button>
+    </div>
+
+    <pre id="log"></pre>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
