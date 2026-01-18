@@ -1,0 +1,123 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE */
+body {
+  font-family: monospace, Arial, sans-serif;
+  background: linear-gradient(135deg, #0b0b1a, #1c1c3a);
+  color: #f5f5f5;
+  text-align: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* TÍTULO */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+/* TELAS */
+#start,
+#game {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* STATUS */
+#status {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+/* MENU */
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* BOTÕES */
+button {
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 140px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #666;
+  transform: scale(1.05);
+}
+
+/* LOG */
+#log {
+  text-align: left;
+  background: #111;
+  padding: 15px;
+  border-radius: 8px;
+  max-height: 320px;
+  overflow-y: auto;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   TEMAS POR BIOMA
+   ========================= */
+
+body.nevado {
+  background: linear-gradient(135deg, #0b1c2d, #1c3a4d);
+}
+
+body.floresta {
+  background: linear-gradient(135deg, #0f2b1a, #1e4d2f);
+}
+
+body.deserto {
+  background: linear-gradient(135deg, #4d3b1f, #8c6b2d);
+}
+
+body.lava {
+  background: linear-gradient(135deg, #3a0b0b, #7a1c1c);
+}
+
+body.nevado-supremo {
+  background: linear-gradient(135deg, #e0f7ff, #9bd7ff);
+  color: #000;
+}
+
+/* SCROLL */
+#log::-webkit-scrollbar {
+  width: 8px;
+}
+
+#log::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  button {
+    min-width: 100%;
+    font-size: 1.05rem;
+  }
+
+  #log {
+    max-height: 250px;
+  }
+}
